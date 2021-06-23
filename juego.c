@@ -21,7 +21,7 @@ int main(){
 
     srand((unsigned) time (NULL));
     
-    test_de_personalidad(&personalidad);
+    //test_de_personalidad(&personalidad);
     mensaje_inicio(personalidad);
     inicializar_juego(&juego, personalidad);
     mostrar_juego(juego);

@@ -3,6 +3,9 @@
 int main(){
     char bosque[20][30];
 
+    bosque[20][30] = 'A';
+    printf(" %c", bosque[20][30]);
+/*
     for (int i = 0; i < 20; i++){
         for (int j = 0; j < 30; j++){
             bosque[i][j] = '-';
@@ -17,5 +20,6 @@ int main(){
         printf("\n");
     }
     printf("\n\n");
+*/
     return 0;
 }
