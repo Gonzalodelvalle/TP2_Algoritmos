@@ -1,10 +1,6 @@
 #include <stdio.h>
 #include "test_de_personalidad.h"
 
-#define POLAR 'I'
-#define PANDA 'P'
-#define PARDO 'G'
-
 #define ANIME 'A'
 #define MUSICA_POP 'M'
 #define LIMPIEZA 'L'

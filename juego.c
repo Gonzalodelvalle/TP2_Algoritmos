@@ -4,10 +4,6 @@
 #include "test_de_personalidad.h"
 #include "osos_contra_reloj.h"
 
-#define POLAR 'I'
-#define PANDA 'P'
-#define PARDO 'G'
-
 //#include "utiles.h"
 
 void mensaje_inicio(char personalidad){
@@ -21,10 +17,18 @@ int main(){
 
     srand((unsigned) time (NULL));
     
-    //test_de_personalidad(&personalidad);
+    test_de_personalidad(&personalidad);
     mensaje_inicio(personalidad);
     inicializar_juego(&juego, personalidad);
     mostrar_juego(juego);
+    while (estado_juego(juego) != -1){
+        char jugada;
+        printf("Ingrese su siguiente jugada: ");
+        scanf(" %c", &jugada);
+        realizar_jugada(&juego, jugada);
+        mostrar_juego(juego);
+    }
+    
 
     
 
